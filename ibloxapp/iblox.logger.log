@@ -1,0 +1,21 @@
+2020-09-05 09:01:52,048 INFO iblox.logger Register API Accessed: /
+2020-09-05 09:03:02,153 INFO iblox.logger Person Creation Endpoint Accessed : /api/new
+2020-09-05 09:03:02,164 INFO iblox.logger Person Record Created Successfully : id=5
+2020-09-05 09:03:28,932 INFO iblox.logger Person Creation Endpoint Accessed : /api/new
+2020-09-05 09:03:28,993 ERROR iblox.logger PersonData Creation in DB Failed {id = 5}
+2020-09-05 09:03:40,156 INFO iblox.logger Person Creation Endpoint Accessed : /api/new
+2020-09-05 09:03:40,156 ERROR iblox.logger PersonData Validation Failed in /api/new
+2020-09-05 09:04:16,950 INFO iblox.logger Person Creation Endpoint Accessed : /api/new
+2020-09-05 09:04:25,636 INFO iblox.logger Person Creation Endpoint Accessed : /api/new
+2020-09-05 09:04:54,482 INFO iblox.logger Person Creation Endpoint Accessed : /api/new
+2020-09-05 09:04:54,482 ERROR iblox.logger PersonData Validation Failed in /api/new['Last Name Missing.']
+2020-09-05 09:06:07,747 INFO iblox.logger Person Creation Endpoint Accessed : /api/new
+2020-09-05 09:06:07,748 ERROR iblox.logger JSON Decode Error in /api/new
+2020-09-05 09:07:31,607 ERROR iblox.logger Error in Registration : Malformed Request Body
+2020-09-05 09:08:00,073 ERROR iblox.logger Error in Registration : Malformed Request Body Extra data: line 5 column 2 (char 83)
+2020-09-05 09:08:27,680 INFO iblox.logger Register API Accessed: /
+2020-09-05 09:08:27,695 ERROR iblox.logger Error in Registration : password1,username
+2020-09-05 09:14:11,730 INFO iblox.logger Register API Accessed: /
+2020-09-05 09:14:57,683 INFO iblox.logger Person Creation Endpoint Accessed : /api/new
+2020-09-05 09:14:57,690 INFO iblox.logger Person Record Created Successfully : id=6
+2020-09-06 11:55:20,470 INFO iblox.logger Home Page Accessed: /

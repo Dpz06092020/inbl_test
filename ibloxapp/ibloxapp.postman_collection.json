@@ -1,0 +1,182 @@
+{
+	"info": {
+		"_postman_id": "cda3c68b-e9b1-4d58-84af-3491771090f6",
+		"name": "ibloxapp",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Fetch All (api/all?page=)",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNTk5Mjk3Mjc5LCJqdGkiOiI3ZjIwMWYxMjc4ZGQ0OTc4OGEwMjIyM2VlNzg5YjJlZCIsInVzZXJfaWQiOjN9.drDHlrhCPEDBghxxkaqjZHP_p-gserFrBAcgNoVXOx0",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8000/api/all?page=1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"all"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Refresh Token (api/auth/token/refresh)",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "",
+						"value": "",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "refresh",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTU5OTA3MTUxNywianRpIjoiOTlhNTA0OGI4YWMxNDhmMTg3ZDIwNTJlZTliOTc3MjUiLCJ1c2VyX2lkIjo3fQ.TNRiXiU9XcoPCgiFrlvfk_ady9MjSimyhyh087fORhw",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/auth/token/refresh",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"auth",
+						"token",
+						"refresh"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Request Token (api/auth/token)",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "username",
+							"value": "harry",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "bla@1234",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/auth/token",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"auth",
+						"token"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Register (/api/register)",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"username\": \"harry\",\n\t\"email\": \"harrypotter@email.com\",\n\t\"password1\": \"bla@1234\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/register",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Person (/api/new)",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNTk5Mjk3NTY5LCJqdGkiOiI0YjdkMjkwM2I1MWU0MTkwOWFiYjRlNWE3YzNlNjBlMCIsInVzZXJfaWQiOjR9.iyU-MkwpdqJsoLNaNxLi1YvkWRP8XveGKl4URV3_ink",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "[{\n\t\t\"id\": 6,\n\t\t\"first_name\": \"Katalin\",\n\t\t\"last_name\": \"Hobden\",\n\t\t\"city\": \"H̱olon\",\n\t\t\"data\": [{\n\t\t\t\"enabled\": false,\n\t\t\t\"guid\": \"9f33357c-be0b-4513-9e0b-0eede4986ecb\"\n\t\t}]\n}]"
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/new",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"new"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
