@@ -5,7 +5,8 @@ Dated: 06-09-2020
 Author: Deepa G Pillai
 
 Featured implemented in the project:
-* Implemented django command to read data from json file and insert into postgres database
+* Implemented django command to read data from json file and insert into postgres database 
+        *Django command to insert data :- python manage.py loadpdata MockData.json
 * Endpoints used:
     1. Registration
     2. To generate token for user
