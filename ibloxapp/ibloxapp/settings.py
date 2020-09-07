@@ -47,7 +47,7 @@ REST_FRAMEWORK = {
      'DEFAULT_AUTHENTICATION_CLASSES': [
          'rest_framework_simplejwt.authentication.JWTAuthentication'],
      'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.PageNumberPagination',
-     'PAGE_SIZE': 5
+     'PAGE_SIZE': 10
 }
 
 
@@ -125,7 +125,7 @@ LOGGING = {
             'class': 'logging.handlers.RotatingFileHandler',
             'filename': 'default.logger.log',
             'maxBytes': 1024*1024*1,  # 1MB
-            'backupCount': 5,
+            'backupCount': 10,
             'formatter': 'standard',
         },
         'iblox': {
@@ -163,9 +163,11 @@ USE_L10N = True
 USE_TZ = True
 
 
-# Static files (CSS, JavaScript, Images)
-# https://docs.djangoproject.com/en/3.1/howto/static-files/
-
+# static file if need to implement ui
 STATIC_URL = '/static/'
 
-
+# STATICFILES_DIRS = [
+#     os.path.join(BASE_DIR, 'static'),
+# ]
+# PROJECT_DIR = os.path.dirname(os.path.abspath(__file__))
+# STATIC_ROOT = os.path.join(PROJECT_DIR, 'static')

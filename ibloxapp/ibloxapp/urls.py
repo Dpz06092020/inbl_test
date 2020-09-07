@@ -15,6 +15,8 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from django.conf.urls.static import static
+from django.conf import settings
 from rest_framework_simplejwt.views import TokenObtainPairView, TokenRefreshView
 
 from person.views import landing_view, register_view, add_person_view, FetchAll
@@ -28,3 +30,4 @@ urlpatterns = [
     path('api/new', add_person_view, name='add'),
     path('api/all', FetchAll.as_view(), name='add')
 ]
+# ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)

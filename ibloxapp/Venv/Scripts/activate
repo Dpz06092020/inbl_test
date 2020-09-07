@@ -37,7 +37,7 @@ deactivate () {
 # unset irrelevant variables
 deactivate nondestructive
 
-VIRTUAL_ENV="D:\ibloxap_v2\ibloxapp\Venv"
+VIRTUAL_ENV="D:\inbl_test\ibloxapp\Venv"
 export VIRTUAL_ENV
 
 _OLD_VIRTUAL_PATH="$PATH"

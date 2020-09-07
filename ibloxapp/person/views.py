@@ -9,7 +9,7 @@ from rest_framework.decorators import api_view, permission_classes
 from rest_framework.generics import ListAPIView
 from rest_framework.pagination import PageNumberPagination
 from rest_framework.permissions import IsAuthenticated
-
+from django.shortcuts import render
 from person.forms import CreateUserForm
 from person.models import PersonData, Person
 from person.serializers import FetchPersonSerializer
@@ -22,7 +22,8 @@ JSON_PARAMS = {'indent': 2}
 
 def landing_view(request):
     logger.info("Home Page Accessed: /")
-    return HttpResponse("<h1>HelloWorld!</h1>")
+    return render(request, 'index.html')
+    # return HttpResponse("<h1>HelloWorld!</h1>")
 
 
 @csrf_exempt
