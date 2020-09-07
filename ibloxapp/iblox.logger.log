@@ -84,3 +84,5 @@
 2020-09-07 12:01:16,346 INFO iblox.logger Home Page Accessed: /
 2020-09-07 12:07:09,644 INFO iblox.logger Home Page Accessed: /
 2020-09-07 12:07:14,397 INFO iblox.logger Home Page Accessed: /
+2020-09-07 18:00:41,476 INFO iblox.logger Person Creation Endpoint Accessed : /api/new
+2020-09-07 18:00:41,508 INFO iblox.logger Person Record Created Successfully : id=119

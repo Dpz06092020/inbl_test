@@ -21,10 +21,10 @@ Api's to used:
 
 
 Requirements:
-1. psycopg2-binary
+1. psycopg2-binary==2.8.5
 2. django==3.0
-3. djangorestframework==3.1.1
-4. djangorestframework_simplejwt
+3. djangorestframework==3.11.1
+4. djangorestframework_simplejwt==4.4.0
 
 
 Note to use application:
